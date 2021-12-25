@@ -1,13 +1,3 @@
-fetch('http://localhost:3000/weather?address=Boston').then((response) => {
-  response.json().then((data) => {
-    if (data.error) {
-      console.log(data.error)
-    } else {
-      console.log(data.location)
-    }
-  })
-})
-
 const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
 const m1 = document.querySelector('#m1')
