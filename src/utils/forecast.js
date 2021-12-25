@@ -10,7 +10,7 @@ const forecast = (lat, long, callback) => {
       callback('Could not reach API', undefined)
       console.log(body.error)
     } else {
-      callback(undefined, 'It is currently ' + body.current.temperature + '. It feels like ' + body.current.feelslike)
+      callback(undefined, 'It is currently ' + body.current.temperature + '. It feels like ' + body.current.feelslike + '. The current visibility is ' + body.current.visibility + '.')
     }
   })
 }
